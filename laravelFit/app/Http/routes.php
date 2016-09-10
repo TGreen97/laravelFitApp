@@ -18,3 +18,9 @@ Route::get('/', function () {
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('/meals', 'MealsController@show');
+
+Route::resource('meals', 'MealsController');
+
+Route::resource('user', 'UserController');
